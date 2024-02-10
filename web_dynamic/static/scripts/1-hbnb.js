@@ -24,6 +24,6 @@ $().ready(function () {
     const AmenitiesList = AmenitiesChecked.map(function (amenity) {
       return amenity.name;
     }).join(', ');
-    $('.amenities h4').text('Amenities: ' + truncate(AmenitiesList, 50));
+    $('.amenities h4').text(truncate(AmenitiesList, 40));
   });
 });
