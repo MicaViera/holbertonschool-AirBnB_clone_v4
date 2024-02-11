@@ -57,13 +57,10 @@ $().ready(function () {
     type : 'POST'
   }).done(function(data){
     places_html = ``
-    console.log(data);
-    // places = JSON.parse(data);
     for(var i = 0; i < data.length ; i++) {
       places_html += place_article(data[i]);
     }
     $('.places').html(places_html);
-    console.log(places_html)
   });
 
 });
